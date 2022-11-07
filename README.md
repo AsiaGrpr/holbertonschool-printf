@@ -1,0 +1,1 @@
+printf task in c
