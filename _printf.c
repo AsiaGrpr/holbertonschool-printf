@@ -50,7 +50,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			f = get_func(&format[i + 1]);
-			
+
 			if (f)
 				counter += f(all);
 			i++;
