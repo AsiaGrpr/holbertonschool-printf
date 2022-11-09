@@ -23,7 +23,7 @@ int (*get_func(const char *format))(va_list)
 			return (func[n].f);
 		n++;
 	}
-	return (n);
+	return (0);
 }
 
 /**
@@ -39,16 +39,13 @@ int _printf(const char *format, ...)
 	int counter = 0;
 	int (*f)(va_list);
 
-	if (format[i] == NULL)
-		return (0);
-
 	va_start(all, format);
 
 	while (format != NULL && format[i])
 	{
 		if (format[i] == '%')
 		{
-			f = get_func(format[i + 1]);
+			f = get_func(&format[i + 1]);
 			counter += f(all);
 			i++;
 		}
