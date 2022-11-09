@@ -14,6 +14,7 @@ typedef struct print_character
 	int (*f)(va_list) ;
 } flag_fn;
 
+int _strlen(char *s);
 int _putchar(char c);
 int print_char(va_list all);
 int print_string(va_list all);
