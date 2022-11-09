@@ -55,10 +55,6 @@ int _printf(const char *format, ...)
 				counter += f(all);
 			i++;
 			}
-			else if (f == NULL)
-			{
-				return (-1);
-			}
 			else
 			{
 			_putchar('%');
