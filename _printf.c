@@ -47,10 +47,9 @@ int _printf(const char *format, ...)
 
 	while (format != NULL && format[i])
 	{
-		f = get_func(&format[i + 1]);
-
 		if (format[i] == '%')
 		{
+			f = get_func(format[i + 1]);
 			if (f)
 			{
 				counter += f(all);
@@ -61,7 +60,7 @@ int _printf(const char *format, ...)
 			counter++;
 			}
 		}
-		
+
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
