@@ -49,16 +49,20 @@ int _printf(const char *format, ...)
 	{
 		f = get_func(&format[i + 1]);
 
-		if (format[i] == '%' && f)
+		if (format[i] == '%')
 		{
-			counter += f(all);
-		}
-		else if (format[i] == '%')
-		{
+			if (f)
+			{
+				counter += f(all);
+			}
+			else
+			{
 			_putchar('%');
 			counter++;
+			}
 		}
-		else
+		
+		if (format[i] != '%')
 		{
 			_putchar(format[i]);
 			counter++;
