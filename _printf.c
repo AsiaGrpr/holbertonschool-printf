@@ -53,6 +53,7 @@ int _printf(const char *format, ...)
 			if (f)
 			{
 				counter += f(all);
+			i++;
 			}
 			else
 			{
