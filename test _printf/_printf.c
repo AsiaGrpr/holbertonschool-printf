@@ -12,18 +12,20 @@ int (*get_func(const char *format))(va_list)
 	flag_fn func[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{0, NULL}
+		{"i", print_int},
+		{"d", print_float},
+		{NULL, NULL}
 	};
 
 	int n = 0;
 
-	while (func[n].specifier != 0)
+	while (func[n].specifier != NULL)
 	{
 		if (*func[n].specifier == *format)
 			return (func[n].f);
-		n++;
+		i++;
 	}
-	return (n);
+	return (0);
 }
 
 /**
@@ -48,9 +50,10 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
+			_putchar('%');
 			f = get_func(format[i + 1]);
 			counter += f(all);
-			i++;
+			i += 2;
 		}
 		else
 		{
