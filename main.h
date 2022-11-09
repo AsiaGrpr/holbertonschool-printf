@@ -10,7 +10,7 @@
 
 typedef struct print_character
 {
-	const char specifier ;
+	const char *specifier ;
 	int (*f)(va_list) ;
 } flag_fn;
 
