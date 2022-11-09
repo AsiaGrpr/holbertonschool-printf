@@ -43,25 +43,3 @@ int print_string(va_list all)
 	write(1, s, _strlen(s));
 	return (_strlen(s));
 }
-
-/**
- * print_int - function that stdout an integer
- * @all: a_list used as input
- *
- * Return: ?
-*/
-void print_int(va_list all)
-{
-
-}
-
-/**
- * print_float - function that stdout a float
- * @all: va_list used as input
- *
- * Return: ?
-*/
-void print_float(va_list all)
-{
-
-}
