@@ -27,8 +27,7 @@ int print_char(va_list all)
 {
 	int c = va_arg(all, int);
 
-	write(1, &c, 1);
-	return (1);
+	return (write(1, &c, 1));
 }
 
 /**
@@ -41,6 +40,8 @@ int print_string(va_list all)
 {
 	char *s = va_arg(all, char *);
 
-	write(1, s, _strlen(s));
-	return (_strlen(s));
+	if (s == NULL)
+		return (0);
+
+	return (write(1, s, _strlen(s)));
 }
