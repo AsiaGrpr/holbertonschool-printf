@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 	va_start(all, format);
 
 	if (format == NULL)
-		return (NULL);
+		return (-1);
 
 	while (format != NULL && format[i])
 	{
