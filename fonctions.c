@@ -43,3 +43,17 @@ int print_string(va_list all)
 	write(1, s, _strlen(s));
 	return (_strlen(s));
 }
+
+/**
+ * print_percent - function that stdout % symbol
+ * @all: va_list used as input
+ * 
+ * Return: Length value
+*/
+int print_percent(va_list all)
+{
+	int c = va_arg(all, int);
+
+	write(1, &c, 1);
+	return (1);
+}
