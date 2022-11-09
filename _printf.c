@@ -47,13 +47,15 @@ int _printf(const char *format, ...)
 
 	while (format != NULL && format[i])
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && f)
 		{
 			f = get_func(&format[i + 1]);
-
-			if (f)
-				counter += f(all);
-			i++;
+			counter += f(all);
+		}
+		else
+		{
+			_putchar('%');
+		i++;
 		}
 		else
 		{
