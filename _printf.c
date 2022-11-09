@@ -60,8 +60,7 @@ int _printf(const char *format, ...)
 			counter++;
 			}
 		}
-
-		if (format[i] != '%')
+		else
 		{
 			_putchar(format[i]);
 			counter++;
