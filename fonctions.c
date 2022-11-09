@@ -54,7 +54,9 @@ int print_string(va_list all)
 */
 int print_percent(va_list all)
 {
-	void(va_list);
-	write(1, "%", 1);
+	int c = va_arg(all, int);
+	c = 37;
+
+	write(1, "&c", 1);
 	return (1);
 }
