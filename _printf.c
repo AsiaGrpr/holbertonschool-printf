@@ -19,7 +19,7 @@ int (*get_func(const char *format))(va_list)
 
 	while (func[n].specifier != 0)
 	{
-		if (func[n].specifier == format)
+		if (*func[n].specifier == *format)
 			return (func[n].f);
 		n++;
 	}
@@ -46,7 +46,8 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			f = get_func(&format[i + 1]);
-			counter += f(all);
+			if (f)
+				counter += f(all);
 			i++;
 		}
 		else
