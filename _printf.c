@@ -52,10 +52,10 @@ int _printf(const char *format, ...)
 			f = get_func(&format[i + 1]);
 			counter += f(all);
 		}
-		else
+		else if (format[i] == '%')
 		{
 			_putchar('%');
-		i++;
+			counter++;
 		}
 		else
 		{
