@@ -36,7 +36,7 @@ int print_char(va_list all)
  *
  * Return: length value
 */
-void print_string(va_list all)
+int print_string(va_list all)
 {
 	char *s = va_arg(all, char *);
 
