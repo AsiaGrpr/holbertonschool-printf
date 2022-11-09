@@ -12,6 +12,7 @@ int (*get_func(const char *format))(va_list)
 	flag_fn func[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"%", print_percent},
 		{0, NULL}
 	};
 
@@ -41,11 +42,15 @@ int _printf(const char *format, ...)
 
 	va_start(all, format);
 
+	if (format == NULL)
+		return (0);
+
 	while (format != NULL && format[i])
 	{
 		if (format[i] == '%')
 		{
 			f = get_func(&format[i + 1]);
+
 			if (f)
 				counter += f(all);
 			i++;

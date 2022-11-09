@@ -10,8 +10,8 @@
 
 typedef struct print_character
 {
-	const char *specifier ;
-	int (*f)(va_list) ;
+	const char *specifier;
+	int (*f)(va_list);
 } flag_fn;
 
 int _printf(const char *format, ...);
