@@ -12,14 +12,14 @@ int (*get_func(const char *format))(va_list)
 	flag_fn func[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{NULL, NULL}
+		{0, NULL}
 	};
 
 	int n = 0;
 
-	while (func[n].specifier != NULL)
+	while (func[n].specifier != 0)
 	{
-		if (*func[n].specifier == format)
+		if (*func[n].specifier == *format)
 			return (func[n].f);
 		n++;
 	}
