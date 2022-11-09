@@ -4,16 +4,16 @@
 /**
  * _strlen - function to know the length of a string
  * @s: pointer to string to mesure
- * 
+ *
  * Return: Length value
-*/
+ */
 int _strlen(char *s)
 {
-  int i = 0;
+	int i = 0;
 
-  while (s[i])
-    i++;
-  return (i);
+	while (s[i])
+		i++;
+	return (i);
 }
 
 /**
@@ -34,12 +34,12 @@ int _putchar(char c)
  * @all: va_list used as input
  * 
  * Return: length value
-*/
+ */
 int print_char(va_list all)
 {
-  int c = va_arg(all, int);
-  write(1, &c, 1);
-  return (1);
+	int c = va_arg(all, int);
+	write(1, &c, 1);
+	return (1);
 }
 
 /**
@@ -47,12 +47,12 @@ int print_char(va_list all)
  * @all: va_list used as input
  * 
  * Return: length value
-*/
+ */
 int print_string(va_list all)
 {
-  char *s = va_arg(all, char *);
-  write(1, s, _strlen(s));
-  return (_strlen(s));
+	char *s = va_arg(all, char *);
+	write(1, s, _strlen(s));
+	return (_strlen(s));
 }
 
 /**
@@ -60,7 +60,7 @@ int print_string(va_list all)
  * @all: a_list used as input
  * 
  * Return: ?
-*/
+ */
 void print_int(va_list all)
 {
 
@@ -71,7 +71,7 @@ void print_int(va_list all)
  * @all: va_list used as input
  * 
  * Return: ?
-*/
+ */
 void print_float(va_list all)
 {
 
