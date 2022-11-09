@@ -19,7 +19,7 @@ int (*get_func(const char *format))(va_list)
 
 	while (func[n].specifier != 0)
 	{
-		if (func[n].specifier == format)
+		if (*func[n].specifier == *format)
 			return (func[n].f);
 		n++;
 	}
