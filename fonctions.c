@@ -53,8 +53,6 @@ int print_string(va_list all)
 */
 int print_percent(va_list all)
 {
-	int c = va_arg(all, int);
-
-	write(1, &c, 1);
+	write(1, "%", 1);
 	return (1);
 }
