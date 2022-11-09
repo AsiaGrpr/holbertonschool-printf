@@ -16,7 +16,6 @@ int _strlen(char *s)
 	return (i);
 }
 
-
 /**
  * print_char - function that stdout a char
  * @all: va_list used as input
@@ -27,7 +26,8 @@ int print_char(va_list all)
 {
 	int c = va_arg(all, int);
 
-	return (write(1, &c, 1));
+	write(1, &c, 1);
+	return (1);
 }
 
 /**
@@ -39,22 +39,29 @@ int print_char(va_list all)
 int print_string(va_list all)
 {
 	char *s = va_arg(all, char *);
-  	if (s == NULL)
-		return (0);
 
-	return (write(1, s, _strlen(s)));
+	write(1, s, _strlen(s));
+	return (_strlen(s));
 }
 
 /**
- * print_percent - function that stdout % symbol
- * @all: va_list used as input
- * 
- * Return: Length value
+ * print_int - function that stdout an integer
+ * @all: a_list used as input
+ *
+ * Return: ?
 */
-int print_percent(va_list all)
+void print_int(va_list all)
 {
-	int c = va_arg(all, int);
 
-	write(1, &c, 1);
-	return (1);
+}
+
+/**
+ * print_float - function that stdout a float
+ * @all: va_list used as input
+ *
+ * Return: ?
+*/
+void print_float(va_list all)
+{
+
 }
