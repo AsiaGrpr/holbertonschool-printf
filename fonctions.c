@@ -39,6 +39,7 @@ int print_char(va_list all)
 int print_string(va_list all)
 {
 	char *s = va_arg(all, char *);
+
   	if (s == NULL)
 		return (0);
 
@@ -53,6 +54,7 @@ int print_string(va_list all)
 */
 int print_percent(va_list all)
 {
+	void(va_list);
 	write(1, "%", 1);
 	return (1);
 }
