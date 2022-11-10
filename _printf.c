@@ -5,9 +5,9 @@
  * get_func - checks format specifier
  * Description: checks format specifier
  * @format: format specifier
+ *
  * Return: pointer to function
  */
-
 int (*get_func(const char *format))(va_list)
 {
 	flag_fn func[] = {
