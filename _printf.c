@@ -1,13 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * get_func - checks format specifier
- * Description: checks format specifier
+ * get_func - Checks format specifier
+ * Description: This is a longer description.
  * @format: format specifier
  * Return: pointer to function
- */
-
+ **/
 int (*get_func(const char *format))(va_list)
 {
 	flag_fn func[] = {
@@ -30,9 +28,9 @@ int (*get_func(const char *format))(va_list)
 /**
  * _printf - prints anything
  * @format: list of arguments
+ *
  * Return: number of characters printed
- */
-
+ **/
 int _printf(const char *format, ...)
 {
 	va_list all;
