@@ -16,7 +16,6 @@ int _strlen(char *s)
 	return (i);
 }
 
-
 /**
  * print_char - function that stdout a char
  * @all: va_list used as input
@@ -58,6 +57,5 @@ int print_percent(va_list all)
 	
 	c = 37;
 
-	write(1, &c, 1);
-	return (1);
+	return(write(1, &c, 1));
 }
