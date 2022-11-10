@@ -30,7 +30,7 @@ int print_char(va_list all)
 }
 
 /**
- * print_string -  function that stdout a string
+ * print_string - function that stdout a string
  * @all: va_list used as input
  *
  * Return: length value
@@ -43,9 +43,3 @@ int print_string(va_list all)
 	return (write(1, s, _strlen(s)));
 }
 
-/**
- * print_integer - function that prints integer
- * @all: va_list used as input
- *
- * Return: number of characters printed
- */
