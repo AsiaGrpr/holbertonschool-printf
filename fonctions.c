@@ -49,15 +49,3 @@ int print_string(va_list all)
  *
  * Return: number of characters printed
  */
-
-/*
-int print_integer(va_list all)
-{
-	int n = va_arg(all, int);
-
-	if (n > 0 && n <= 9)
-	{
-		n = n + '0';
-		return(write(1, &n, 1));
-	}
-}*/
