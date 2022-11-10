@@ -57,12 +57,11 @@ int _printf(const char *format, ...)
 			}
 			else if (f == NULL)
 			{
-				counter++;
 				return (-1);
 			}
 			else
 			{
-				_putchar("%");
+				_putchar('%');
 				counter++;
 			}
 		}
