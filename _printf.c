@@ -43,17 +43,27 @@ int _printf(const char *format, ...)
 	va_start(all, format);
 
 	if (format == NULL)
-		return (0);
+		return (-1);
 
 	while (format != NULL && format[i])
 	{
 		if (format[i] == '%')
 		{
 			f = get_func(&format[i + 1]);
-
 			if (f)
+			{
 				counter += f(all);
 			i++;
+			}
+			else if (f == NULL)
+			{
+				return (-1);
+			}
+			else
+			{
+			_putchar('%');
+			counter++;
+			}
 		}
 		else
 		{
