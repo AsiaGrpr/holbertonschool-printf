@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 
 	va_start(all, format);
 
-	if (format == NULL)
+	if (format == NULL || format[0] == "%" && format[1] == '\0')
 		return (-1);
 
 	while (format != NULL && format[i])
@@ -59,10 +59,8 @@ int _printf(const char *format, ...)
 					counter += f(all);
 					i++;
 				}
-				else 
-				{
+				else
 					counter += _putchar(format[i]);
-				}
 			}
 		}
 		else
