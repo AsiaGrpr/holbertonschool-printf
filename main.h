@@ -14,7 +14,6 @@ typedef struct print_character
 	int (*f)(va_list);
 } flag_fn;
 
-int print_percent(va_list all);
 int _printf(const char *format, ...);
 int _strlen(char *s);
 int _putchar(char c);
