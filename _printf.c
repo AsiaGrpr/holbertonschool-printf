@@ -59,10 +59,6 @@ int _printf(const char *format, ...)
 					counter += f(all);
 					i++;
 				}
-				else
-				{
-					_putchar(format[i + 1]);
-				}
 			}
 		}
 		else
