@@ -44,15 +44,18 @@ int print_string(va_list all)
 }
 
 /**
- * print_percent - function that stdout % symbol
+ * print_integer - function that prints integer
  * @all: va_list used as input
  *
- * Return: Length value
-*/
-int print_percent(va_list all)
+ * Return: number of characters printed
+ */
+int print_integer(va_list all)
 {
-	int c = va_arg(all, int);
+	int n = va_arg(all, int);
 
-	c = 37;
-	return (write(1, &c, 1));
+	if (n > 0 && n <= 9)
+	{
+		n = n + '0';
+		return(write(1, &n, 1));
+	}
 }
