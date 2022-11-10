@@ -38,8 +38,8 @@ int print_char(va_list all)
 int print_string(va_list all)
 {
 	char *s = va_arg(all, char *);
-
-	s == NULL ? s = "(Null)" : s;
+  
+  s == NULL ? s = "(null)" : s;
 	return (write(1, s, _strlen(s)));
 }
 
