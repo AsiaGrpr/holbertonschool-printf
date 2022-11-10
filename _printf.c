@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * get_func - checks format specifier
+ * get_func - Checks format specifier
  * @format: format specifier
  * Return: pointer to function
  **/
