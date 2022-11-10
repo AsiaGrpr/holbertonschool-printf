@@ -12,7 +12,7 @@ int (*get_func(const char *format))(va_list)
 	flag_fn func[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"%", print_percent},
+		//{"%", print_percent},
 		{0, NULL}
 	};
 
@@ -63,12 +63,8 @@ int _printf(const char *format, ...)
 					i++;
 				}
 				else
-				{
 					return (-1);
-				}
-
 			}
-			
 		}
 		else
 		{
@@ -77,7 +73,6 @@ int _printf(const char *format, ...)
 		}
 		i++;
 	}
-
 	va_end(all);
 	return (counter);
 }
