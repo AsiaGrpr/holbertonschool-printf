@@ -39,7 +39,7 @@ int print_string(va_list all)
 {
 	char *s = va_arg(all, char *);
 
-  	if (s == NULL)
+	if (s == NULL)
 		return (0);
 
 	return (write(1, s, _strlen(s)));
@@ -48,13 +48,13 @@ int print_string(va_list all)
 /**
  * print_percent - function that stdout % symbol
  * @all: va_list used as input
- * 
+ *
  * Return: Length value
 */
 int print_percent(va_list all)
 {
 	int c = va_arg(all, int);
-	c = 37;
 
+	c = 37;
 	return (write(1, &c, 1));
 }
