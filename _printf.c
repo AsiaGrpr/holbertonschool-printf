@@ -36,9 +36,7 @@ int (*get_func(const char *format))(va_list)
 int _printf(const char *format, ...)
 {
 	va_list all;
-	int i = 0;
-	int counter = 0;
-	int (*f)(va_list);
+	int i = 0, counter = 0, (*f)(va_list);
 
 	va_start(all, format);
 
