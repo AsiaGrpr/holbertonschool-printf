@@ -2,6 +2,7 @@
 #include <stdlib.h>
 /**
  * get_func - Checks format specifier
+ * Description: This is a longer description.
  * @format: format specifier
  * Return: pointer to function
  **/
