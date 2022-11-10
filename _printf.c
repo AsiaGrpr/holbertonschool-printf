@@ -3,6 +3,7 @@
 
 /**
  * get_func - checks format specifier
+ * Description: checks format specifier
  * @format: format specifier
  * Return: pointer to function
  */
