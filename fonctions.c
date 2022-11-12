@@ -84,11 +84,11 @@ int print_int(va_list all)
  */
 int print_binary(va_list all)
 {
-	int number = va_arg(all, int);
-	int binary = 0;
-	int place = 1;
-	int remainder = 0;
-	int counter = 0;
+	unsigned int number = va_arg(all, unsigned int);
+	unsigned int binary = 0;
+	unsigned int place = 1;
+	unsigned int remainder = 0;
+	unsigned int counter = 0;
 
 	while (number)
 	{
