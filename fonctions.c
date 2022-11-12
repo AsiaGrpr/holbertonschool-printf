@@ -85,7 +85,8 @@ int print_int(va_list all)
 int print_binary(va_list all)
 {
 	unsigned int number = va_arg(all, unsigned int);
-	unsigned int i = 0;
+	unsigned int i = 0, j;
+	unsigned int array[];
 	unsigned int counter = 0;
 
 	while (number)
