@@ -85,18 +85,19 @@ int print_int(va_list all)
 int print_binary(va_list all)
 {
 	unsigned int number = va_arg(all, unsigned int);
-	unsigned int i = 0, j;
-	unsigned int array[];
+	unsigned int binary[32];
+	unsigned int i = 0;
 	unsigned int counter = 0;
 
-	while (number)
+	while (number != 0)
 	{
-		array[i] = number % 2;
+		binary[i] = number % 2;
 		number = number / 2;
 		i++;
-
-		for (j = i - 1; j >= 0; j--)
-			counter += _putchar(array[i]);
 	}
+
+	for (i = 0; i < 32; i++)
+		counter += _putchar('0' + a[i]);
+
 	return (counter);
 }
