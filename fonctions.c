@@ -75,3 +75,27 @@ int print_int(va_list all)
 	}
 	return (c);
 }
+
+/**
+ * print_binary - function that convert integer to binary
+ * @all: number to convert
+ *
+ * Return: number of character printed
+ */
+int print_binary(va_list all)
+{
+	int number = va_arg(all, int);
+	int binary = 0;
+	int place = 1;
+	int remainder = 0;
+	int counter = 0;
+
+	while (number)
+	{
+		remainder = number % 2;
+		number = number / 2;
+		_binary = binary + (remainder * place);
+		counter += _putchar(binary);
+		place = place * 10;
+	}
+}
