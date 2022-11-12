@@ -19,7 +19,7 @@ int binary(unsigned int number, int count)
 		count = binary(number / 2, count + 1);
 	}
 	_putchar((number % 2) + '0');
-	
+
 	return (count);
 }
 
@@ -36,5 +36,5 @@ int print_binary(va_list all)
 	unsigned int number = va_arg(all, unsigned int);
 
 	count = binary(number, count);
-	return (count);
+	return (count + 1);
 }
