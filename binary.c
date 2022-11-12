@@ -16,7 +16,7 @@ int binary(unsigned int number, int count)
 	}
 	else
 	{
-		_putchar((n % 2) + 10 * binary(number / 2, count + 1));
+		_putchar((number % 2) + 10 * binary(number / 2, count + 1));
 	}
 	return (count);
 }
