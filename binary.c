@@ -10,11 +10,7 @@
 
 int binary(unsigned int number, int count)
 {
-	if (number == 0)
-	{
-		return (0);
-	}
-	else
+	if (number / 2)
 	{
 		count = binary(number / 2, count + 1);
 	}
