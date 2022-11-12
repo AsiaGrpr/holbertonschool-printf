@@ -22,5 +22,6 @@ int print_string(va_list all);
 int (*get_func(const char *format))(va_list);
 int print_int (va_list all);
 int print_binary(va_list all);
+int binary(unsigned int number, int count);
 
 #endif /* MAIN_H */
