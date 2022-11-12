@@ -20,5 +20,6 @@ int _putchar(char c);
 int print_char(va_list all);
 int print_string(va_list all);
 int (*get_func(const char *format))(va_list);
+int print_int (va_list all);
 
 #endif /* MAIN_H */
