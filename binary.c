@@ -10,7 +10,7 @@
 
 int binary(unsigned int number, int count)
 {
-	while ((n / 2) != 0)
+	while ((number / 2) != 0)
 	{
 		count = binary(number / 2, count + 1);
 		_putchar(number % 2 + '0');
