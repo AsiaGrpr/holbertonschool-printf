@@ -30,7 +30,7 @@ int print_char(va_list all)
 }
 
 /**
- * print_string -  function that stdout a string
+ * print_string - function that stdout a string
  * @all: va_list used as input
  *
  * Return: length value
