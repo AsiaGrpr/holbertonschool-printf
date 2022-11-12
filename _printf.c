@@ -12,7 +12,7 @@ int (*get_func(const char *format))(va_list)
 		{"c", print_char},
 		{"s", print_string},
 		{"d", print_int},
-		{"i", print_int}
+		{"i", print_int},
 		{0, NULL}
 	};
 
