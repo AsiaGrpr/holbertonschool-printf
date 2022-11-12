@@ -42,6 +42,8 @@ d, i	The int argument is converted to signed decimal notation. The precision, if
 		digits, it is padded on the left with zeros. The default precision is 1. When 0 is printed 
 		with an explicit precision 0, the output is empty.
 
+b		The unsigned int argument is converted to binary.
+
 %		A '%' is written. No argument is converted. The complete conversion specification is '%%'.
 
 .SH	RETURN VALUE
