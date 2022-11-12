@@ -94,8 +94,9 @@ int print_binary(va_list all)
 	{
 		remainder = number % 2;
 		number = number / 2;
-		_binary = binary + (remainder * place);
+		binary = binary + (remainder * place);
 		counter += _putchar(binary);
 		place = place * 10;
 	}
+	return (counter);
 }
