@@ -10,9 +10,14 @@
 
 int binary(unsigned int number, int count)
 {
-	while (number >= 1)
-		count = binary(number / 2, count + 1);
-	_putchar(number % 2 + '0');
+	if (number == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		_putchar((n % 2) + 10 * binary(number / 2, count + 1));
+	}
 	return (count);
 }
 
