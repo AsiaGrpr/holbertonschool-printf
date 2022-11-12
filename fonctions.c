@@ -97,7 +97,7 @@ int print_binary(va_list all)
 	}
 
 	for (i = 0; i < 32; i++)
-		counter += _putchar('0' + a[i]);
+		counter += _putchar('0' + binary[i]);
 
 	return (counter);
 }
