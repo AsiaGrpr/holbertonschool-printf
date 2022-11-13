@@ -18,14 +18,14 @@ int hexadecimal(char c)
 		temp = c % 16;
 		if (temp < 10)
 		{
-			hexa[i] = temp + 48;
-			_putchar(hexa[i] + '0');
+			hexa = temp + 48;
+			_putchar(hexa + '0');
 			i++;
 		}
 		else
 		{
-			hexa[i] = temp + 55;
-			_putchar(hexa[i] + '0');
+			hexa = temp + 55;
+			_putchar(hexa + '0');
 			i++;
 		}
 		c = c / 16;
