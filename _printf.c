@@ -14,7 +14,7 @@ int (*get_func(const char *format))(va_list)
 		{"d", print_int},
 		{"i", print_int},
 		{"b", print_binary},
-		{"S", print_hexa},
+		{"S", print_hexadecimal},
 		{0, NULL}
 	};
 
