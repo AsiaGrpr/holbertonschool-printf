@@ -52,7 +52,7 @@ int print_hexadecimal(va_list all)
 	{
 		if ((s[i] > 0 && s[i] < 32) || s[i] >= 127)
 		{
-			counter += _putchar('\');
+			counter += _putchar('\\');
 			counter += _putchar('x');
 			counter += hexadecimal(str[i]);
 		}
@@ -61,5 +61,5 @@ int print_hexadecimal(va_list all)
 			counter += _putchar(s[i]);
 		}
 	}
-	return (count);
+	return (counter);
 }
