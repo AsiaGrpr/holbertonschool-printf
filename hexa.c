@@ -54,7 +54,7 @@ int print_hexadecimal(va_list all)
 		{
 			counter += _putchar('\\');
 			counter += _putchar('x');
-			counter += hexadecimal(str[i]);
+			counter += hexadecimal(s[i]);
 		}
 		else
 		{
