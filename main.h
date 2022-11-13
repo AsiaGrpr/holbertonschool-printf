@@ -23,5 +23,6 @@ int (*get_func(const char *format))(va_list);
 int print_int (va_list all);
 int print_binary(va_list all);
 int binary(unsigned int number, int count);
-
+int hexadecimal(char c);
+int print_hexadecimal(va_list all);
 #endif /* MAIN_H */
