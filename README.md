@@ -39,7 +39,7 @@ More instructions were:
 ### Built with
 
 * Language: C
-* IDE: Vim
+* Text editor: Vim
 * Docker.
 
 ## Description of the function _printf 
