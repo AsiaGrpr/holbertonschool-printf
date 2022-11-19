@@ -145,5 +145,3 @@ GitHub: [@AsiaGrpr](https://github.com/AsiaGrpr)
 
 **Sonia Nguyen**
 GitHub: [@soniangn](https://github.com/soniangn)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
